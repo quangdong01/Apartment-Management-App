@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>management</class>
+ <widget class="QMainWindow" name="management">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>20</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>0</y>
+       <width>241</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>19</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;font color = red&gt;Trung tâm quản lí &lt;font&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_Time">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuL_a_ch_n">
+    <property name="title">
+     <string>Lựa chọn</string>
+    </property>
+    <widget class="QMenu" name="menuH_gia_nh">
+     <property name="title">
+      <string>Hộ gia đình</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/image_no_color/icon_no_color/home.svg</normaloff>:/image_no_color/icon_no_color/home.svg</iconset>
+     </property>
+     <addaction name="actionTh_m_h_gia_nh"/>
+     <addaction name="separator"/>
+     <addaction name="actionXem_th_ng_tin_c_c_h_gia_nh"/>
+     <addaction name="separator"/>
+     <addaction name="actionC_p_nh_t_th_ng_tin_h_gia_nh"/>
+     <addaction name="separator"/>
+     <addaction name="actionX_a_th_ng_tin_h_gia_nh"/>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="menuNh_n_vi_n">
+     <property name="title">
+      <string>Nhân viên</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/image_no_color/icon_no_color/android.svg</normaloff>:/image_no_color/icon_no_color/android.svg</iconset>
+     </property>
+     <addaction name="actionTh_m_nh_n_vi_n"/>
+     <addaction name="separator"/>
+     <addaction name="actionX_a_nh_n_vi_n"/>
+     <addaction name="separator"/>
+     <addaction name="actionXem_th_ng_tin_to_n_b_nh_n_vi_n"/>
+     <addaction name="separator"/>
+     <addaction name="actionC_p_nh_t_th_ng_tin_nh_n_vi_n"/>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="menuD_ch_v">
+     <property name="title">
+      <string>Dịch vụ</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/image_no_color/icon_no_color/briefcase.svg</normaloff>:/image_no_color/icon_no_color/briefcase.svg</iconset>
+     </property>
+     <addaction name="actionTh_m_d_ch_v"/>
+     <addaction name="separator"/>
+     <addaction name="actionXem_th_ng_tin_c_c_d_ch_v"/>
+     <addaction name="separator"/>
+     <addaction name="actionC_p_nh_t_d_ch_v"/>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="menuH_gia_nh"/>
+    <addaction name="separator"/>
+    <addaction name="menuNh_n_vi_n"/>
+    <addaction name="separator"/>
+    <addaction name="menuD_ch_v"/>
+    <addaction name="separator"/>
+    <addaction name="action_ng_xu_t"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuL_a_ch_n"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionTh_m_h_gia_nh"/>
+   <addaction name="separator"/>
+   <addaction name="actionXem_th_ng_tin_c_c_h_gia_nh"/>
+   <addaction name="separator"/>
+   <addaction name="actionC_p_nh_t_th_ng_tin_h_gia_nh"/>
+   <addaction name="separator"/>
+   <addaction name="actionX_a_th_ng_tin_h_gia_nh"/>
+   <addaction name="separator"/>
+   <addaction name="actionTh_m_nh_n_vi_n"/>
+   <addaction name="separator"/>
+   <addaction name="actionX_a_nh_n_vi_n"/>
+   <addaction name="separator"/>
+   <addaction name="actionXem_th_ng_tin_to_n_b_nh_n_vi_n"/>
+   <addaction name="separator"/>
+   <addaction name="actionC_p_nh_t_th_ng_tin_nh_n_vi_n"/>
+   <addaction name="separator"/>
+   <addaction name="actionTh_m_d_ch_v"/>
+   <addaction name="separator"/>
+   <addaction name="actionXem_th_ng_tin_c_c_d_ch_v"/>
+   <addaction name="separator"/>
+   <addaction name="actionC_p_nh_t_d_ch_v"/>
+   <addaction name="separator"/>
+   <addaction name="action_ng_xu_t"/>
+  </widget>
+  <action name="action_ng_xu_t">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/close.svg</normaloff>:/image_no_color/icon_no_color/close.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Đăng xuất</string>
+   </property>
+  </action>
+  <action name="actionTh_m_h_gia_nh">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/id-badge.svg</normaloff>:/image_no_color/icon_no_color/id-badge.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Thêm hộ gia đình</string>
+   </property>
+  </action>
+  <action name="actionXem_th_ng_tin_c_c_h_gia_nh">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/eye.svg</normaloff>:/image_no_color/icon_no_color/eye.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Xem thông tin các hộ gia đình</string>
+   </property>
+  </action>
+  <action name="actionC_p_nh_t_th_ng_tin_h_gia_nh">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/stack-overflow.svg</normaloff>:/image_no_color/icon_no_color/stack-overflow.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Cập nhật thông tin hộ gia đình</string>
+   </property>
+  </action>
+  <action name="actionX_a_th_ng_tin_h_gia_nh">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/alert.svg</normaloff>:/image_no_color/icon_no_color/alert.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Xóa thông tin hộ gia đình</string>
+   </property>
+  </action>
+  <action name="actionTh_m_nh_n_vi_n">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/comments-smiley.svg</normaloff>:/image_no_color/icon_no_color/comments-smiley.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Thêm nhân viên</string>
+   </property>
+  </action>
+  <action name="actionX_a_nh_n_vi_n">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/eraser.svg</normaloff>:/image_no_color/icon_no_color/eraser.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Xóa nhân viên</string>
+   </property>
+  </action>
+  <action name="actionXem_th_ng_tin_to_n_b_nh_n_vi_n">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/server.svg</normaloff>:/image_no_color/icon_no_color/server.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Xem thông tin toàn bộ nhân viên</string>
+   </property>
+  </action>
+  <action name="actionC_p_nh_t_th_ng_tin_nh_n_vi_n">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/exchange-vertical.svg</normaloff>:/image_no_color/icon_no_color/exchange-vertical.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Cập nhật thông tin nhân viên</string>
+   </property>
+  </action>
+  <action name="actionTh_m_d_ch_v">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/arrow-up.svg</normaloff>:/image_no_color/icon_no_color/arrow-up.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Thêm dịch vụ</string>
+   </property>
+  </action>
+  <action name="actionXem_th_ng_tin_c_c_d_ch_v">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/layout-accordion-separated.svg</normaloff>:/image_no_color/icon_no_color/layout-accordion-separated.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Xem thông tin các dịch vụ</string>
+   </property>
+  </action>
+  <action name="actionC_p_nh_t_d_ch_v">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/direction-alt.svg</normaloff>:/image_no_color/icon_no_color/direction-alt.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Cập nhật dịch vụ </string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
