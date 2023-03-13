@@ -6,6 +6,8 @@
 #include "staff.h"
 #include "management.h"
 #include <QMessageBox>
+extern QString MHGD;
+extern QString MNV;
 
 namespace Ui {
 class login;

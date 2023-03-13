@@ -3,6 +3,9 @@
 #include <QDateTime>
 #include <QPixmap>
 #include <QMessageBox>
+#include <QSqlError>
+#include <QDebug>
+
 int option;
 
 
@@ -10,8 +13,22 @@ int option;
 choose_option_login::choose_option_login(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::choose_option_login)
+    , mDbConnection("(local)",
+                    "SQL SERVER",
+                    "qd",
+                    "",
+                    "BTL_KTPMUD",
+                    true)
 {
     ui->setupUi(this);
+    mModel = nullptr;
+
+    QString error;
+    if(this->mDbConnection.openDatabase(&error))
+    {
+        qDebug() << "Connect to database successfully";
+    }
+
     // Set up logo of Background
     QPixmap pix(":/other/other_image/s2.jpg");
     int w = ui->label_Background->width();
@@ -26,7 +43,7 @@ choose_option_login::choose_option_login(QWidget *parent)
 
 
     // Set statusbar with follow text
-    ui->statusbar->showMessage("Copyright@ Embedded Networking Laboratory");
+    ui->statusbar->showMessage("Copyright@ Hanoi University of Science and Technology");
 
 
     // Set time for Window
@@ -42,6 +59,7 @@ choose_option_login::~choose_option_login()
 {
     delete ui;
 }
+
 
 
 // Slot Function

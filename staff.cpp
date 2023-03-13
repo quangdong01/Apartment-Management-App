@@ -15,7 +15,7 @@ staff::staff(QWidget *parent) :
     timer->start(1);
 
     // Set statusbar with follow text
-    ui->statusbar->showMessage("Copyright@ Embedded Networking Laboratory");
+   ui->statusbar->showMessage("Copyright@ Hanoi University of Science and Technology");
 }
 
 staff::~staff()
@@ -45,5 +45,21 @@ void staff::on_actionTho_t_triggered()
     sta = new choose_option_login(this);
     sta->setWindowTitle("CỔNG THÔNG TIN QUẢN LÍ DỊCH VỤ");
     sta->show();
+}
+
+
+void staff::on_actionXem_h_s_triggered()
+{
+    staff_showinf4 *staffs = new staff_showinf4();
+    staffs->setWindowTitle("Hồ sơ nhân viên");
+    staffs->show();
+}
+
+
+void staff::on_actionL_ch_tr_c_triggered()
+{
+    staff_showcalendar *stasho = new staff_showcalendar();
+    stasho->setWindowTitle("Lịch trực nhân viên");
+    stasho->show();
 }
 

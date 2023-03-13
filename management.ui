@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>918</width>
+    <height>701</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>310</x>
       <y>20</y>
       <width>281</width>
       <height>41</height>
@@ -48,14 +48,38 @@
    <widget class="QLabel" name="label_Time">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>380</x>
       <y>0</y>
-      <width>131</width>
+      <width>141</width>
       <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>901</width>
+      <height>551</height>
      </rect>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/other/other_image/Vinhome_nhanvien.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -64,7 +88,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>918</width>
      <height>22</height>
     </rect>
    </property>
@@ -84,10 +108,13 @@
      <addaction name="separator"/>
      <addaction name="actionXem_th_ng_tin_c_c_h_gia_nh"/>
      <addaction name="separator"/>
+     <addaction name="actionXem_th_ng_tin_th_nh_vi_n"/>
+     <addaction name="separator"/>
      <addaction name="actionC_p_nh_t_th_ng_tin_h_gia_nh"/>
      <addaction name="separator"/>
-     <addaction name="actionX_a_th_ng_tin_h_gia_nh"/>
+     <addaction name="actionD_li_u_d_ch_v_c_ng_k"/>
      <addaction name="separator"/>
+     <addaction name="actionD_li_u_t_ng_d_ch_v_h_gia_nh"/>
     </widget>
     <widget class="QMenu" name="menuNh_n_vi_n">
      <property name="title">
@@ -102,8 +129,6 @@
      <addaction name="actionX_a_nh_n_vi_n"/>
      <addaction name="separator"/>
      <addaction name="actionXem_th_ng_tin_to_n_b_nh_n_vi_n"/>
-     <addaction name="separator"/>
-     <addaction name="actionC_p_nh_t_th_ng_tin_nh_n_vi_n"/>
      <addaction name="separator"/>
     </widget>
     <widget class="QMenu" name="menuD_ch_v">
@@ -147,9 +172,10 @@
    <addaction name="separator"/>
    <addaction name="actionXem_th_ng_tin_c_c_h_gia_nh"/>
    <addaction name="separator"/>
+   <addaction name="actionXem_th_ng_tin_th_nh_vi_n"/>
+   <addaction name="separator"/>
    <addaction name="actionC_p_nh_t_th_ng_tin_h_gia_nh"/>
    <addaction name="separator"/>
-   <addaction name="actionX_a_th_ng_tin_h_gia_nh"/>
    <addaction name="separator"/>
    <addaction name="actionTh_m_nh_n_vi_n"/>
    <addaction name="separator"/>
@@ -157,7 +183,6 @@
    <addaction name="separator"/>
    <addaction name="actionXem_th_ng_tin_to_n_b_nh_n_vi_n"/>
    <addaction name="separator"/>
-   <addaction name="actionC_p_nh_t_th_ng_tin_nh_n_vi_n"/>
    <addaction name="separator"/>
    <addaction name="actionTh_m_d_ch_v"/>
    <addaction name="separator"/>
@@ -203,15 +228,6 @@
     <string>Cập nhật thông tin hộ gia đình</string>
    </property>
   </action>
-  <action name="actionX_a_th_ng_tin_h_gia_nh">
-   <property name="icon">
-    <iconset resource="resource.qrc">
-     <normaloff>:/image_no_color/icon_no_color/alert.svg</normaloff>:/image_no_color/icon_no_color/alert.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Xóa thông tin hộ gia đình</string>
-   </property>
-  </action>
   <action name="actionTh_m_nh_n_vi_n">
    <property name="icon">
     <iconset resource="resource.qrc">
@@ -239,15 +255,6 @@
     <string>Xem thông tin toàn bộ nhân viên</string>
    </property>
   </action>
-  <action name="actionC_p_nh_t_th_ng_tin_nh_n_vi_n">
-   <property name="icon">
-    <iconset resource="resource.qrc">
-     <normaloff>:/image_no_color/icon_no_color/exchange-vertical.svg</normaloff>:/image_no_color/icon_no_color/exchange-vertical.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Cập nhật thông tin nhân viên</string>
-   </property>
-  </action>
   <action name="actionTh_m_d_ch_v">
    <property name="icon">
     <iconset resource="resource.qrc">
@@ -272,7 +279,34 @@
      <normaloff>:/image_no_color/icon_no_color/direction-alt.svg</normaloff>:/image_no_color/icon_no_color/direction-alt.svg</iconset>
    </property>
    <property name="text">
-    <string>Cập nhật dịch vụ </string>
+    <string>Xóa dịch vụ</string>
+   </property>
+  </action>
+  <action name="actionXem_th_ng_tin_th_nh_vi_n">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/bar-chart.svg</normaloff>:/image_no_color/icon_no_color/bar-chart.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Xem thông tin thành viên</string>
+   </property>
+  </action>
+  <action name="actionD_li_u_d_ch_v_c_ng_k">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/control-eject.svg</normaloff>:/image_no_color/icon_no_color/control-eject.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Dữ liệu dịch vụ được đăng kí</string>
+   </property>
+  </action>
+  <action name="actionD_li_u_t_ng_d_ch_v_h_gia_nh">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image_no_color/icon_no_color/sharethis.svg</normaloff>:/image_no_color/icon_no_color/sharethis.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Dữ liệu tổng dịch vụ</string>
    </property>
   </action>
  </widget>

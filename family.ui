@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>772</width>
-    <height>579</height>
+    <width>993</width>
+    <height>726</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QLabel" name="label_time">
     <property name="geometry">
      <rect>
-      <x>316</x>
+      <x>410</x>
       <y>0</y>
       <width>121</width>
       <height>20</height>
@@ -33,7 +33,7 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>310</x>
       <y>20</y>
       <width>311</width>
       <height>41</height>
@@ -61,13 +61,35 @@
      </property>
     </widget>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>971</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/other/other_image/512x512.a8de660d3bb0c8cceb4769b9bdb92e00.ai.1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/other/other_image/Vinhome.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>772</width>
+     <width>993</width>
      <height>22</height>
     </rect>
    </property>
@@ -79,16 +101,11 @@
     <addaction name="separator"/>
     <addaction name="actionD_ch_v"/>
     <addaction name="separator"/>
+    <addaction name="actionTh_ng_tin_d_ch_v_th_ng_n_y"/>
+    <addaction name="separator"/>
     <addaction name="actionTho_t"/>
    </widget>
-   <widget class="QMenu" name="menuH_tr">
-    <property name="title">
-     <string>Hỗ trợ </string>
-    </property>
-    <addaction name="actionPh_n_h_i"/>
-   </widget>
    <addaction name="menuL_a_ch_n"/>
-   <addaction name="menuH_tr"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -105,7 +122,7 @@
    <addaction name="separator"/>
    <addaction name="actionD_ch_v"/>
    <addaction name="separator"/>
-   <addaction name="actionPh_n_h_i"/>
+   <addaction name="actionTh_ng_tin_d_ch_v_th_ng_n_y"/>
    <addaction name="separator"/>
    <addaction name="actionTho_t"/>
   </widget>
@@ -115,7 +132,7 @@
      <normaloff>:/image_no_color/icon_no_color/id-badge.svg</normaloff>:/image_no_color/icon_no_color/id-badge.svg</iconset>
    </property>
    <property name="text">
-    <string>Xem hồ sơ</string>
+    <string>Xem hồ sơ gia đình</string>
    </property>
   </action>
   <action name="actionD_ch_v">
@@ -136,13 +153,13 @@
     <string>Thoát</string>
    </property>
   </action>
-  <action name="actionPh_n_h_i">
+  <action name="actionTh_ng_tin_d_ch_v_th_ng_n_y">
    <property name="icon">
     <iconset resource="resource.qrc">
-     <normaloff>:/image_no_color/icon_no_color/announcement.svg</normaloff>:/image_no_color/icon_no_color/announcement.svg</iconset>
+     <normaloff>:/image_no_color/icon_no_color/archive.svg</normaloff>:/image_no_color/icon_no_color/archive.svg</iconset>
    </property>
    <property name="text">
-    <string>Phản hồi</string>
+    <string>Dịch vụ đã sử dụng</string>
    </property>
   </action>
  </widget>

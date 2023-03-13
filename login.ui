@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>514</height>
+    <width>911</width>
+    <height>647</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,11 +17,16 @@
    <widget class="QLabel" name="label_Time">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>370</x>
       <y>0</y>
-      <width>131</width>
+      <width>141</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
     </property>
     <property name="text">
      <string/>
@@ -32,18 +37,23 @@
      <rect>
       <x>50</x>
       <y>80</y>
-      <width>651</width>
-      <height>361</height>
+      <width>751</width>
+      <height>441</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
     <property name="title">
-     <string/>
+     <string>ĐĂNG NHẬP VÀO HỆ THỐNG</string>
     </property>
     <widget class="QLabel" name="label_texttaikhoan">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>60</y>
+       <y>90</y>
        <width>571</width>
        <height>31</height>
       </rect>
@@ -64,7 +74,7 @@
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>160</y>
+       <y>220</y>
        <width>581</width>
        <height>31</height>
       </rect>
@@ -82,7 +92,7 @@
      <property name="geometry">
       <rect>
        <x>308</x>
-       <y>254</y>
+       <y>320</y>
        <width>131</width>
        <height>31</height>
       </rect>
@@ -113,7 +123,7 @@
      <property name="geometry">
       <rect>
        <x>468</x>
-       <y>254</y>
+       <y>320</y>
        <width>131</width>
        <height>31</height>
       </rect>
@@ -138,9 +148,9 @@
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>30</y>
+       <y>60</y>
        <width>581</width>
-       <height>27</height>
+       <height>34</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
@@ -165,9 +175,9 @@
      <property name="geometry">
       <rect>
        <x>31</x>
-       <y>120</y>
+       <y>190</y>
        <width>581</width>
-       <height>27</height>
+       <height>34</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -179,7 +189,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Mật khẩu:       </string>
+         <string>Mật khẩu:      </string>
         </property>
        </widget>
       </item>
@@ -193,26 +203,13 @@
      </layout>
     </widget>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>361</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:x-large;&quot;&gt;ĐĂNG NHẬP VÀO HỆ THỐNG &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>911</width>
      <height>22</height>
     </rect>
    </property>

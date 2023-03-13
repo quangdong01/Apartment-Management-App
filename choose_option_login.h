@@ -3,8 +3,8 @@
 #include <QTimer>
 #include <QMainWindow>
 #include "login.h"
-
-
+#include "databaseconnection.h"
+#include <QSqlQueryModel>
 // variable to use other files
 extern int option;
 
@@ -22,13 +22,15 @@ public:
     choose_option_login(QWidget *parent = nullptr);
     ~choose_option_login();
 
-
 private:
     Ui::choose_option_login *ui;
 
     // Create timer pointer to set time for app
     QTimer *timer;
     login *log;
+    databaseConnection mDbConnection;
+    QSqlQueryModel *mModel;
+
 
 public slots:
     // slot to set time

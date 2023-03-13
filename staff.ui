@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>965</width>
+    <height>709</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QLabel" name="label_time">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>420</x>
       <y>0</y>
       <width>131</width>
       <height>20</height>
@@ -33,7 +33,7 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>330</x>
       <y>20</y>
       <width>311</width>
       <height>41</height>
@@ -61,13 +61,32 @@
      </property>
     </widget>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>941</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/other/other_image/VinHome_Quanli.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>965</width>
      <height>22</height>
     </rect>
    </property>
@@ -78,8 +97,6 @@
     <addaction name="actionXem_h_s"/>
     <addaction name="separator"/>
     <addaction name="actionL_ch_tr_c"/>
-    <addaction name="separator"/>
-    <addaction name="actionThanh_to_n_l_ng"/>
     <addaction name="separator"/>
     <addaction name="actionTho_t"/>
    </widget>
@@ -100,7 +117,6 @@
    <addaction name="separator"/>
    <addaction name="actionL_ch_tr_c"/>
    <addaction name="separator"/>
-   <addaction name="actionThanh_to_n_l_ng"/>
    <addaction name="separator"/>
    <addaction name="actionTho_t"/>
   </widget>
@@ -120,15 +136,6 @@
    </property>
    <property name="text">
     <string>Lịch trực</string>
-   </property>
-  </action>
-  <action name="actionThanh_to_n_l_ng">
-   <property name="icon">
-    <iconset resource="resource.qrc">
-     <normaloff>:/image_no_color/icon_no_color/envelope.svg</normaloff>:/image_no_color/icon_no_color/envelope.svg</iconset>
-   </property>
-   <property name="text">
-    <string>Thanh toán lương</string>
    </property>
   </action>
   <action name="actionTho_t">

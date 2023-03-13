@@ -17,8 +17,7 @@ family::family(QWidget *parent) :
     timer->start(1);
 
     // Set statusbar with follow text
-    ui->statusbar->showMessage("Copyright@ Embedded Networking Laboratory");
-
+   ui->statusbar->showMessage("Copyright@ Hanoi University of Science and Technology");
 }
 
 // to set time
@@ -52,5 +51,29 @@ void family::on_actionTho_t_triggered()
     fa = new choose_option_login(this);
     fa->setWindowTitle("CỔNG THÔNG TIN QUẢN LÍ DỊCH VỤ");
     fa->show();
+}
+
+
+void family::on_actionXem_h_s_triggered()
+{
+    family_showinf4 *fam = new family_showinf4();
+    fam->setWindowTitle("Thông tin thành viên gia đình bạn");
+    fam->show();
+}
+
+
+void family::on_actionD_ch_v_triggered()
+{
+    family_chooseservice *famch = new family_chooseservice();
+    famch->setWindowTitle("Dịch vụ của bạn");
+    famch->show();
+}
+
+
+void family::on_actionTh_ng_tin_d_ch_v_th_ng_n_y_triggered()
+{
+    family_servicebuy *famser = new family_servicebuy();
+    famser->setWindowTitle("Dịch vụ đã sử dụng");
+    famser->show();
 }
 

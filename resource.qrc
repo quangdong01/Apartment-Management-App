@@ -74,6 +74,11 @@
     <qresource prefix="/other">
         <file>other_image/512x512.a8de660d3bb0c8cceb4769b9bdb92e00.ai.1.png</file>
         <file>other_image/s2.jpg</file>
+        <file>other_image/Profile backround.jpg</file>
+        <file>other_image/Profile.jpg</file>
+        <file>other_image/Vinhome.jpg</file>
+        <file>other_image/Vinhome_nhanvien.jpg</file>
+        <file>other_image/VinHome_Quanli.jpg</file>
     </qresource>
     <qresource prefix="/image_no_color">
         <file>icon_no_color/agenda.svg</file>

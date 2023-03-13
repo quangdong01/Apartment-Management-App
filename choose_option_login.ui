@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>817</width>
-    <height>581</height>
+    <width>962</width>
+    <height>673</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -34,8 +34,8 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>530</y>
-      <width>811</width>
+      <y>610</y>
+      <width>961</width>
       <height>16</height>
      </rect>
     </property>
@@ -46,7 +46,7 @@
    <widget class="QLabel" name="label_Time">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>400</x>
       <y>0</y>
       <width>141</width>
       <height>20</height>
@@ -70,8 +70,8 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>510</y>
+      <x>560</x>
+      <y>590</y>
       <width>381</width>
       <height>17</height>
      </rect>
@@ -82,7 +82,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Địa chỉ: Phường Tây Mỗ Quận, Nam Từ Liêm, Hà Nội</string>
+     <string>Địa chỉ: Phường Tây Mỗ, Quận Nam Từ Liêm, Hà Nội</string>
     </property>
    </widget>
    <widget class="QGroupBox" name="groupBox_3">
@@ -90,8 +90,8 @@
      <rect>
       <x>20</x>
       <y>140</y>
-      <width>611</width>
-      <height>351</height>
+      <width>671</width>
+      <height>361</height>
      </rect>
     </property>
     <property name="title">
@@ -256,7 +256,7 @@
      <rect>
       <x>0</x>
       <y>120</y>
-      <width>811</width>
+      <width>961</width>
       <height>16</height>
      </rect>
     </property>
@@ -272,7 +272,7 @@
      <rect>
       <x>0</x>
       <y>20</y>
-      <width>811</width>
+      <width>961</width>
       <height>16</height>
      </rect>
     </property>
@@ -343,7 +343,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>817</width>
+     <width>962</width>
      <height>22</height>
     </rect>
    </property>
